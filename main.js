@@ -29,7 +29,7 @@ document.getElementById("the-button").addEventListener("click", (e) => {
 
 function getPassword(arr) {
     let getChar = () => arr[Math.floor(Math.random() * arr.length)];
-    result = "";
+    let result = "";
     for (let i = 0; i < resultLength; i++) {
         result += getChar();
     }
