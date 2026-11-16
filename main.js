@@ -10,7 +10,7 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 
 let resultLength = 15;
 
-function generate() {
+function theButton() {
     let charsToUse = [];
     charsToUse.push(...letters);
     if (pwUseNumbers.checked) {
