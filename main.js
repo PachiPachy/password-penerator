@@ -10,7 +10,7 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 
 let resultLength = 15;
 
-function theButton() {
+document.getElementById("the-button").addEventListener("click", (e) => {
     let charsToUse = [];
     charsToUse.push(...letters);
     if (pwUseNumbers.checked) {
@@ -25,7 +25,7 @@ function theButton() {
     for (const elem of pwResults) {
         elem.textContent = getPassword(charsToUse);
     };
-}
+});
 
 function getPassword(arr) {
     let getChar = () => arr[Math.floor(Math.random() * arr.length)];
